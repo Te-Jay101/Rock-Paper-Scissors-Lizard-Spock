@@ -67,9 +67,9 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official after 3 modifications were made. [W3C validator]
+  - No errors were returned when passing through the official after 3 modifications were made. [W3C validator].
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator]
+  - No errors were found when passing through the official [(Jigsaw) validator].
 
 
 ### Unfixed Bugs
@@ -93,4 +93,7 @@ The live link for my site is as follows:
 
 - Used geeksforgeeks.org to help with aspects of css.
 
+### Media
+
+- Favicon taken from icons8.com.
 
