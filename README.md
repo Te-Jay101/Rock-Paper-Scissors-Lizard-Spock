@@ -1,39 +1,96 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock-Paper-Scissors-Lizard-Spock Game
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows five choices. Each choice wins against two other choices, loses against two other choices and ties against itself. Much of Rock-Paper-Scissors-Lizard-Spock's popularity is that it has been featured in 3 episodes of the TV series "The Big Bang Theory".
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
 
-## Codeanywhere Reminders
+![Responsive Mockup] -
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
 
-`python3 -m http.server`
+### Existing Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Game Heading__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+  - Featured at the top of the site, the heading tells the user that they have entered the battle arena.
 
-`http_server`
+![heading](assets/images/heading.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Score Tally__
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - The game includes a tally showing the user what score they are on before the game ends after 10 turns.
+  - This section provides the user information on what score they and the computer are on.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Score Tally](assets/images/scoreboard.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Choose Your Weapon!__
 
----
+  - This heading indicates to the user to choose a weapon of either: rock, Paper, Scissors, Lizard, Spock.
 
-Happy coding!
+
+![Choose Your Weapon](assets/images/chooseyourweapon.png)
+
+
+- __Moves Remaining__
+
+  - The game includes a moves remaining bar that shows how many moves are left until the game is over.
+  - This indicates how many more chances the user has to finish the game.
+
+![Moves Remaining](assets/images/movesremaining.png)
+
+- __The Choices__
+
+  - The options are Rock, Paper, Scissors, Lizard, Spock.
+  - This bar is where the player has interactive buttons that can be chosen in order to play against the computer. The resulting option will lead to a display of who has won if anyone. 
+
+![Weapon bar](assets/images/weaponbar.png) 
+
+- __The Footer__ 
+
+  - The Footer shows the clear rules of the game and explains how to play Rock, Paper, Scissors, Lizard, Spock. 
+
+![The Footer](assets/images/footer)
+
+
+## Testing 
+
+- I have tested this game in multiple browsers including: Chrome, Safari and Firefox.
+- I can confirm the game always ends in the correct way and behaves accordingly.
+- I can confirm all text is easily readable and easy to understand.
+- I have run it through lighthouse and have determined that all colors and fonts are easy to read and accessible.
+
+
+![Lighthouse](assets/images/lighthousescreenshot.png)
+
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official after 3 modifications were made. [W3C validator]
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator]
+
+
+### Unfixed Bugs
+
+No unfixed bugs left.
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+
+  - The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab.
+  - From the source section drop-down menu, select the Master Branch.
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link for my site is as follows: 
+
+## Credits 
+
+### Content 
+
+- 
+
+
