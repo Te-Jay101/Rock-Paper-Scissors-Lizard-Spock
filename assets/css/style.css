@@ -32,4 +32,25 @@
     top: 70px;
     z-index: 1;
 }
-
+/* Computer score and Player score */
+.computerCount, .playerCount {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+/* Button styling */
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+/* Styling for each button selection */
+.rock, .paper, .scissors, .lizard, .spock {
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: red;
+    cursor: pointer;
+    flex: auto;
+}
