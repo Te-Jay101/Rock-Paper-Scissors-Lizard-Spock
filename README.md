@@ -50,7 +50,7 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
 
   - The Footer shows the clear rules of the game and explains how to play Rock, Paper, Scissors, Lizard, Spock. 
 
-![The Footer](assets/images/footer)
+![The Footer](assets/images/footer.png)
 
 
 ## Testing 
