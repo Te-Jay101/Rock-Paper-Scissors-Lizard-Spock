@@ -85,7 +85,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link for my site is as follows: 
+The live link for my site is as follows: https://te-jay101.github.io/Rock-Paper-Scissors-Lizard-Spock/
 
 ## Credits 
 
