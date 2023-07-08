@@ -166,17 +166,17 @@ const startBattle = () => {
             if (humanPlayerScore > evilComputerScore){
                 result.style.fontSize = '2rem';
                 result.innerText = 'You Won This Round!';
-                result.style.color = 'red';
+                result.style.color = '#006400';
             }
             else if (humanPlayerScore < evilComputerScore){
                 result.style.fontSize = '2rem';
                 result.innerText = 'You Lost This Round!';
-                result.style.color = 'red';
+                result.style.color = '#006400';
             }
             else{
                 result.style.fontSize = '2rem';
                 result.innerText = 'Equally Matched!';
-                result.style.color = 'red';
+                result.style.color = '#006400';
             }
             reloadBtn.innertext = 'Restart';
             reloadBtn.style.display ='flex';
