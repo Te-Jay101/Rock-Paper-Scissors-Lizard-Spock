@@ -1,9 +1,9 @@
-const startBattle = () {
+const startBattle = () => {
     let humanPlayerScore = 0;
     let evilComputerScore = 0;
     let moves = 0;
 
-    const beginFight = () {
+    const beginFight = () => {
         const rockAction = document.querySelector('.rock');
         const paperAction = document.querySelector('.paper');
         const scissorsAction = document.querySelector('.scissors');
@@ -49,37 +49,41 @@ const startBattle = () {
                 humanPlayerScore++;
                 humanPlayerScoreBoard.textContent = humanPlayerScore;
             };
-            else if (player == 'scissors'){
-                if(computer == 'rock'){
+        }
+        else if (player == 'scissors'){
+            if(computer == 'rock'){
                     result.textContent = 'Evil Computer Wins!';
                     evilComputerScore++;
                     evilComputerScoreBoard.textContent = evilComputerScore;
-                }else {
+            }else {
                     result.textContent = 'Congratulations, You Win!';
                     humanPlayerScore++;
                     humanPlayerScoreBoard.textContent = humanPlayerScore;
                 };
-            else if (player == 'paper'){
-                if(computer == 'scissors'){
+            }
+        else if (player == 'paper'){
+            if(computer == 'scissors'){
                     result.textContent = 'Evil Computer Wins!';
                     evilComputerScore++;
                     evilComputerScoreBoard.textContent = evilComputerScore;
-                }else {
+                } else {
                     result.textContent = 'Congratulations, You Win!';
                     humanPlayerScore++;
                     humanPlayerScoreBoard.textContent = humanPlayerScore;
                     };
-            else if (player == 'lizard'){
+                }
+        else if (player == 'lizard'){
                  if(computer == 'rock'){
                     result.textContent = 'Evil Computer Wins!';
                     evilComputerScore++;
                     evilComputerScoreBoard.textContent = evilComputerScore;
-                }else {
+                } else {
                     result.textContent = 'Congratulations, You Win!';
                     humanPlayerScore++;
                     humanPlayerScoreBoard.textContent = humanPlayerScore;
-                    };   
-            else if (player == 'spock'){
+                    };  
+                }
+        else if (player == 'spock'){
                 if(computer == 'lizard'){
                     result.textContent = 'Evil Computer Wins!';
                     evilComputerScore++;
@@ -89,7 +93,8 @@ const startBattle = () {
                     humanPlayerScore++;
                     humanPlayerScoreBoard.textContent = humanPlayerScore;
                     };
-                else if (player == 'scissors'){
+                }
+        else if (player == 'scissors'){
                     if(computer == 'spock'){
                         result.textContent = 'Evil Computer Wins!';
                         evilComputerScore++;
@@ -99,7 +104,8 @@ const startBattle = () {
                         humanPlayerScore++;
                         humanPlayerScoreBoard.textContent = humanPlayerScore;
                         };
-                else if (player == 'lizard'){
+                    }
+        else if (player == 'lizard'){
                     if(computer == 'scissors'){
                         result.textContent = 'Evil Computer Wins!';
                         evilComputerScore++;
@@ -109,7 +115,8 @@ const startBattle = () {
                         humanPlayerScore++;
                         humanPlayerScoreBoard.textContent = humanPlayerScore;
                         };
-                else if (player == 'paper'){
+                    }
+        else if (player == 'paper'){
                     if(computer == 'lizard'){
                         result.textContent = 'Evil Computer Wins!';
                         evilComputerScore++;
@@ -119,7 +126,8 @@ const startBattle = () {
                         humanPlayerScore++;
                         humanPlayerScoreBoard.textContent = humanPlayerScore;
                         };
-                else if (player == 'spock'){
+                    }
+        else if (player == 'spock'){
                     if(computer == 'paper'){
                         result.textContent = 'Evil Computer Wins!';
                         evilComputerScore++;
@@ -129,7 +137,8 @@ const startBattle = () {
                         humanPlayerScore++;
                         humanPlayerScoreBoard.textContent = humanPlayerScore;
                         };
-                else if (player == 'rock'){
+                    }
+        else if (player == 'rock'){
                     if(computer == 'spock'){
                         result.textContent = 'Evil Computer Wins!';
                         evilComputerScore++;
@@ -138,8 +147,10 @@ const startBattle = () {
                         result.textContent = 'Congratulations, You Win!';
                         humanPlayerScore++;
                         humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };            
+                        };  
+                    }          
         }
-    }
 
-}
+
+    };
+
