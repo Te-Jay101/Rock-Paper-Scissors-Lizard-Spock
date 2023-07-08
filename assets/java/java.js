@@ -48,7 +48,97 @@ const startBattle = () {
                 result.textContent = 'Congratulations, You Win!';
                 humanPlayerScore++;
                 humanPlayerScoreBoard.textContent = humanPlayerScore;
-            }
+            };
+            else if (player == 'scissors'){
+                if(computer == 'rock'){
+                    result.textContent = 'Evil Computer Wins!';
+                    evilComputerScore++;
+                    evilComputerScoreBoard.textContent = evilComputerScore;
+                }else {
+                    result.textContent = 'Congratulations, You Win!';
+                    humanPlayerScore++;
+                    humanPlayerScoreBoard.textContent = humanPlayerScore;
+                };
+            else if (player == 'paper'){
+                if(computer == 'scissors'){
+                    result.textContent = 'Evil Computer Wins!';
+                    evilComputerScore++;
+                    evilComputerScoreBoard.textContent = evilComputerScore;
+                }else {
+                    result.textContent = 'Congratulations, You Win!';
+                    humanPlayerScore++;
+                    humanPlayerScoreBoard.textContent = humanPlayerScore;
+                    };
+            else if (player == 'lizard'){
+                 if(computer == 'rock'){
+                    result.textContent = 'Evil Computer Wins!';
+                    evilComputerScore++;
+                    evilComputerScoreBoard.textContent = evilComputerScore;
+                }else {
+                    result.textContent = 'Congratulations, You Win!';
+                    humanPlayerScore++;
+                    humanPlayerScoreBoard.textContent = humanPlayerScore;
+                    };   
+            else if (player == 'spock'){
+                if(computer == 'lizard'){
+                    result.textContent = 'Evil Computer Wins!';
+                    evilComputerScore++;
+                    evilComputerScoreBoard.textContent = evilComputerScore;
+                }else {
+                    result.textContent = 'Congratulations, You Win!';
+                    humanPlayerScore++;
+                    humanPlayerScoreBoard.textContent = humanPlayerScore;
+                    };
+                else if (player == 'scissors'){
+                    if(computer == 'spock'){
+                        result.textContent = 'Evil Computer Wins!';
+                        evilComputerScore++;
+                        evilComputerScoreBoard.textContent = evilComputerScore;
+                    }else {
+                        result.textContent = 'Congratulations, You Win!';
+                        humanPlayerScore++;
+                        humanPlayerScoreBoard.textContent = humanPlayerScore;
+                        };
+                else if (player == 'lizard'){
+                    if(computer == 'scissors'){
+                        result.textContent = 'Evil Computer Wins!';
+                        evilComputerScore++;
+                        evilComputerScoreBoard.textContent = evilComputerScore;
+                    }else {
+                        result.textContent = 'Congratulations, You Win!';
+                        humanPlayerScore++;
+                        humanPlayerScoreBoard.textContent = humanPlayerScore;
+                        };
+                else if (player == 'paper'){
+                    if(computer == 'lizard'){
+                        result.textContent = 'Evil Computer Wins!';
+                        evilComputerScore++;
+                        evilComputerScoreBoard.textContent = evilComputerScore;
+                    }else {
+                        result.textContent = 'Congratulations, You Win!';
+                        humanPlayerScore++;
+                        humanPlayerScoreBoard.textContent = humanPlayerScore;
+                        };
+                else if (player == 'spock'){
+                    if(computer == 'paper'){
+                        result.textContent = 'Evil Computer Wins!';
+                        evilComputerScore++;
+                        evilComputerScoreBoard.textContent = evilComputerScore;
+                    }else {
+                        result.textContent = 'Congratulations, You Win!';
+                        humanPlayerScore++;
+                        humanPlayerScoreBoard.textContent = humanPlayerScore;
+                        };
+                else if (player == 'rock'){
+                    if(computer == 'spock'){
+                        result.textContent = 'Evil Computer Wins!';
+                        evilComputerScore++;
+                        evilComputerScoreBoard.textContent = evilComputerScore;
+                    }else {
+                        result.textContent = 'Congratulations, You Win!';
+                        humanPlayerScore++;
+                        humanPlayerScoreBoard.textContent = humanPlayerScore;
+                        };            
         }
     }
 
