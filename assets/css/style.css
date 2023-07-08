@@ -60,3 +60,12 @@
     font-weight: bold;
     padding-top: 30%;
 }
+/* Reload button style */
+.reload{
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+}
