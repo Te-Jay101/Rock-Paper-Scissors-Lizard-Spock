@@ -23,4 +23,13 @@
     font-size: 4rem;
     z-index: 2;
 }
-.score
+/* Style for score board */
+.score{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
