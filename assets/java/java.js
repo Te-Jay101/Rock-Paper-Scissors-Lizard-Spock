@@ -151,6 +151,43 @@ const startBattle = () => {
                     }          
         }
 
+        const gameover = (playerOptions, movesLeft) => {
+            const chooseMove = document.querySelector('.move');
+            const result = document.querySelector('.result');
+            const reloadBtn = document.querySelector('.reload');
+
+            playerOptions.forEach( option => {
+                option.style.display = 'none';
+            });
+
+            chooseMove.innerText = 'Game Over!';
+            movesLeft.style.display = 'none';
+
+            if (humanPlayerScore > evilComputerScore){
+                result.style.fontSize = '2rem';
+                result.innerText = 'You Won This Round!';
+                result.style.color = 'red';
+            }
+            else if (humanPlayerScore < evilComputerScore){
+                result.style.fontSize = '2rem';
+                result.innerText = 'You Lost This Round!';
+                result.style.color = 'red';
+            }
+            else{
+                result.style.fontSize = '2rem';
+                result.innerText = 'Equally Matched!';
+                result.style.color = 'red';
+            }
+            reloadBtn.innertext = 'Restart';
+            reloadBtn.style.display ='flex';
+            reloadBtn.addEventListener('click', () => {
+                wondow.location.reload();
+            });
+        };
+
+        beginFight();
 
     };
+
+    startBattle();
 
