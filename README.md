@@ -4,7 +4,7 @@
 Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows five choices. Each choice wins against two other choices, loses against two other choices and ties against itself. Much of Rock-Paper-Scissors-Lizard-Spock's popularity is that it has been featured in 3 episodes of the TV series "The Big Bang Theory".
 
 
-![Responsive Mockup] -
+![Responsive Mockup] - 
 
 
 ### Existing Features
@@ -91,6 +91,6 @@ The live link for my site is as follows:
 
 ### Content 
 
-- 
+- Used geeksforgeeks.org to help with aspects of css.
 
 
