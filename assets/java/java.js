@@ -9,7 +9,10 @@ const startBattle = () {
         const scissorsAction = document.querySelector('.scissors');
         const lizardAction = document.querySelector('.lizard');
         const spockAction = document.querySelector('.spock');
-        const playerOptions = [rockAction,paperAction,scissorsAction,lizardAction,spockAction]
+        const playerOptions = [rockAction,paperAction,scissorsAction,lizardAction,spockAction];
+        const computerChoices = ['rock','paper','scissors','lizard','spock'];
+
+        
     }
 
 }
