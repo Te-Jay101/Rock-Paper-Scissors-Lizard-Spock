@@ -54,3 +54,9 @@
     cursor: pointer;
     flex: auto;
 }
+
+.move{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 30%;
+}
