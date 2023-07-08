@@ -14,9 +14,9 @@ const startBattle = () => {
 
         playerOptions.forEach(Option => {
             Option.addEventListener('click', function(){
-                const movesleft = document.querySelector('.movesleft');
+                const movesLeft = document.querySelector('.movesLeft');
                 moves++;
-                movesleft.innerText = `Rounds to go: ${10 - moves}`;
+                movesLeft.innerText = `Rounds to go: ${10 - moves}`;
 
                 const choiceNumber = Math.floor(Math.random()*5);
                 const computerChoice = computerChoices [choiceNumber];
@@ -24,7 +24,7 @@ const startBattle = () => {
                 victor(this.innerText,computerChoice);
 
                 if (moves == 10){
-                    gameOver(playerOptions,movesLeft);
+                    gameOver(playerOptions, movesLeft);
                 }
             });
         });
@@ -151,12 +151,12 @@ const startBattle = () => {
                     }          
         }
 
-        const gameover = (playerOptions, movesLeft) => {
+        const gameOver = (playerOptions, movesLeft) => {
             const chooseMove = document.querySelector('.move');
             const result = document.querySelector('.result');
             const reloadBtn = document.querySelector('.reload');
 
-            playerOptions.forEach( option => {
+            playerOptions.forEach(option => {
                 option.style.display = 'none';
             });
 
@@ -181,7 +181,7 @@ const startBattle = () => {
             reloadBtn.innertext = 'Restart';
             reloadBtn.style.display ='flex';
             reloadBtn.addEventListener('click', () => {
-                wondow.location.reload();
+                window.location.reload();
             });
         };
 
