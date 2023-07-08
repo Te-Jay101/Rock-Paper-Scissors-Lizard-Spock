@@ -26,8 +26,30 @@ const startBattle = () {
                 if (moves == 10){
                     gameOver(playerOptions,movesLeft);
                 }
-            })
-        })
+            });
+        });
+    };
+
+    const victor = (player,computer) => {
+        const result = document.querySelector('.result');
+        const humanPlayerScoreBoard = document.querySelector('.playerCount');
+        const evilComputerScoreBoard = document.querySelector('.computerCount');
+        player = player.toLowerCase();
+        computer = computer.toLowerCase();
+        if(player === computer){
+            result.textContent = 'Equally Matched!';
+        }
+        else if (player == 'rock'){
+            if(computer == 'paper'){
+                result.textContent = 'Evil Computer Wins!';
+                evilComputerScore++;
+                evilComputerScoreBoard.textContent = evilComputerScore;
+            }else {
+                result.textContent = 'Congratulations, You Win!';
+                humanPlayerScore++;
+                humanPlayerScoreBoard.textContent = humanPlayerScore;
+            }
+        }
     }
 
 }
