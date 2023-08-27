@@ -1,70 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-
-    <title>Rock/Paper/Scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
-    <section class="game">
-        <!--Title area-->
-        <div class="title">Battle Arena!</div>
-        <!--Score div-->
-        <div class="score">
-            <div class="playerScore">
-                <h2>Player:</h2>
-                <p class="playerCount count">0</p>
-            </div>   
-            <div class="evilComputerScore">
-                <h2>Evil Computer:</h2>
-                <p class="computerCount count">0</p>
-            </div>    
-        </div>
-
-        <!--To choose what to use-->
-        <div class="move">Choose your weapon!</div>
-
-        <!--How many moves are remaining-->
-        <div class="movesLeft">Moves Remaining: 10</div>
-
-        <!--Options for player-->
-        <div class="options">
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
-            <button class="lizard">Lizard</button>
-            <button class="spock">Spock</button>
-        </div>
-
-        <!--Result-->
-        <div class="result"></div>
-        
-        <!--Restart the game-->
-        <button class="reload">Restart</button>
-        
-    </section>
-
-    <!--Footer -->
-    <footer class="footer">
-        <h2>The Rules</h2>
-        <p>Scissors cuts paper, 
-            paper covers rock, 
-            rock crushes lizard, 
-            lizard poisons Spock, 
-            Spock smashes scissors, 
-            scissors decapitates lizard, 
-            lizard eats paper, 
-            paper disproves Spock, 
-            Spock vaporizes rock and rock crushes scissors.</p>
-    </footer>
-
-    <script src="assets/java/java.js"></script>
+    <nav>
+        <a href="rules.html" class="rules-button">Rules</a>
+      </nav>
+  <h1>Rock Paper Scissors Lizard Spock</h1>
+  <div class="choices">
+    <button class="choice" id="rock">Rock</button>
+    <button class="choice" id="paper">Paper</button>
+    <button class="choice" id="scissors">Scissors</button>
+    <button class="choice" id="lizard">Lizard</button>
+    <button class="choice" id="spock">Spock</button>
+  </div>
+  <div id="result"></div>
+  <script src="assets/java/java.js"></script>
 </body>
-
-
 </html>

@@ -4,53 +4,42 @@
 Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows five choices. Each choice wins against two other choices, loses against two other choices and ties against itself. Much of Rock-Paper-Scissors-Lizard-Spock's popularity is that it has been featured in 3 episodes of the TV series "The Big Bang Theory".
 
 
-![ResponsiveMockup](assets/images/responsivemockup.png)
+![ResponsiveMockup](assets/images/)
 
 
 ### Existing Features
 
-- __Game Heading__
+- __The Rules__
 
-  - Featured at the top of the site, the heading tells the user that they have entered the battle arena.
+  - Featured at the top of the site.
+    - A link that take you to the rules page.
+    - Clearly explains the rules of the game to the user.
 
-![heading](assets/images/heading.png)
+![TheRules](assets/images/)
 
+- __Heading__
 
-- __Score Tally__
+- The title of the page.
+  - Positioned at the top of the page just below the rules tab, clearly positioned that contrasts witht he background.
+  - The header clearly tells the user what the game is.
 
-  - The game includes a tally showing the user what score they are on before the game ends after 10 turns.
-  - This section provides the user information on what score they and the computer are on.
+![Heading](assets/images/) 
 
+- __Make a Choice__
 
-![Score Tally](assets/images/scoreboard.png)
+  - The option boxs are clearly positioned for the user to make a choice in the game.
+    - Interactive buttons that the player can select to play against the computer.
 
-- __Choose Your Weapon!__
+![MakeaChoice](assets/images/)
 
-  - This heading indicates to the user to choose a weapon of either: rock, Paper, Scissors, Lizard, Spock.
-
-
-![Choose Your Weapon](assets/images/chooseyourweapon.png)
-
-
-- __Moves Remaining__
-
-  - The game includes a moves remaining bar that shows how many moves are left until the game is over.
-  - This indicates how many more chances the user has to finish the game.
-
-![Moves Remaining](assets/images/movesremaining.png)
-
-- __The Choices__
+- __The Winner__
 
   - The options are Rock, Paper, Scissors, Lizard, Spock.
-  - This bar is where the player has interactive buttons that can be chosen in order to play against the computer. The resulting option will lead to a display of who has won if anyone. 
+    - This bar is where the player has interactive buttons that can be chosen in order to play against the computer. The resulting option will lead to a display of who has won if anyone. 
+    - Making a choice will present 2 pictures in browser that shows your choice vs the computers and declare a winner.
 
-![Weapon bar](assets/images/weaponbar.png) 
+![TheWinner](assets/images/) 
 
-- __The Footer__ 
-
-  - The Footer shows the clear rules of the game and explains how to play Rock, Paper, Scissors, Lizard, Spock. 
-
-![The Footer](assets/images/footer.png)
 
 
 ## Testing 
@@ -61,7 +50,7 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
 - I have run it through lighthouse and have determined that all colors and fonts are easy to read and accessible.
 
 
-![Lighthouse](assets/images/lighthousescreenshot.png)
+![Lighthouse](assets/images/)
 
 
 ### Validator Testing 
@@ -70,6 +59,8 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
   - No errors were returned when passing through the official after 3 modifications were made. [W3C validator].
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator].
+- Java
+  - No errors other than esversion: 6 error.
 
 
 ### Unfixed Bugs
@@ -85,7 +76,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch.
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link for my site is as follows: https://te-jay101.github.io/Rock-Paper-Scissors-Lizard-Spock/
+The live link for my site is as follows: 
 
 ## Credits 
 
@@ -96,4 +87,5 @@ The live link for my site is as follows: https://te-jay101.github.io/Rock-Paper-
 ### Media
 
 - Favicon taken from icons8.com.
+- Pictures taken from google images.
 

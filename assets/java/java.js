@@ -1,193 +1,64 @@
-const startBattle = () => {
-    let humanPlayerScore = 0;
-    let evilComputerScore = 0;
-    let moves = 0;
+// Define the available choices for the game
+const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    const beginFight = () => {
-        const rockAction = document.querySelector('.rock');
-        const paperAction = document.querySelector('.paper');
-        const scissorsAction = document.querySelector('.scissors');
-        const lizardAction = document.querySelector('.lizard');
-        const spockAction = document.querySelector('.spock');
-        const playerOptions = [rockAction,paperAction,scissorsAction,lizardAction,spockAction];
-        const computerChoices = ['rock','paper','scissors','lizard','spock'];
+// Get the result display div element
+const resultDiv = document.getElementById("result");
 
-        playerOptions.forEach(Option => {
-            Option.addEventListener('click', function(){
-                const movesLeft = document.querySelector('.movesLeft');
-                moves++;
-                movesLeft.innerText = `Rounds to go: ${10 - moves}`;
+// Function to randomly choose a computer's choice
+function computerChoice() {
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+}
 
-                const choiceNumber = Math.floor(Math.random()*5);
-                const computerChoice = computerChoices [choiceNumber];
+// Function to play the game based on user's choice
+function play(userChoice) {
+  // Get the computer's choice
+  const compChoice = computerChoice();
 
-                victor(this.innerText,computerChoice);
+  // Determine the result of the game
+  const result = determineWinner(userChoice, compChoice);
 
-                if (moves == 10){
-                    gameOver(playerOptions, movesLeft);
-                }
-            });
-        });
-    };
+  // Display the user's and computer's choices along with the result
+  resultDiv.innerHTML = `
+    <p>You chose ${userChoice}.</p>
+    <img src="images/${userChoice}.jpeg" alt="${userChoice}" />
+    <p>Computer chose ${compChoice}.</p>
+    <img src="images/${compChoice}.jpeg" alt="${compChoice}" />
+    <p>${result}</p>
+  `;
 
-    const victor = (player,computer) => {
-        const result = document.querySelector('.result');
-        const humanPlayerScoreBoard = document.querySelector('.playerCount');
-        const evilComputerScoreBoard = document.querySelector('.computerCount');
-        player = player.toLowerCase();
-        computer = computer.toLowerCase();
-        if(player === computer){
-            result.textContent = 'Equally Matched!';
-        }
-        else if (player == 'rock'){
-            if(computer == 'paper'){
-                result.textContent = 'Evil Computer Wins!';
-                evilComputerScore++;
-                evilComputerScoreBoard.textContent = evilComputerScore;
-            }else {
-                result.textContent = 'Congratulations, You Win!';
-                humanPlayerScore++;
-                humanPlayerScoreBoard.textContent = humanPlayerScore;
-            };
-        }
-        else if (player == 'scissors'){
-            if(computer == 'rock'){
-                    result.textContent = 'Evil Computer Wins!';
-                    evilComputerScore++;
-                    evilComputerScoreBoard.textContent = evilComputerScore;
-            }else {
-                    result.textContent = 'Congratulations, You Win!';
-                    humanPlayerScore++;
-                    humanPlayerScoreBoard.textContent = humanPlayerScore;
-                };
-            }
-        else if (player == 'paper'){
-            if(computer == 'scissors'){
-                    result.textContent = 'Evil Computer Wins!';
-                    evilComputerScore++;
-                    evilComputerScoreBoard.textContent = evilComputerScore;
-                } else {
-                    result.textContent = 'Congratulations, You Win!';
-                    humanPlayerScore++;
-                    humanPlayerScoreBoard.textContent = humanPlayerScore;
-                    };
-                }
-        else if (player == 'lizard'){
-                 if(computer == 'rock'){
-                    result.textContent = 'Evil Computer Wins!';
-                    evilComputerScore++;
-                    evilComputerScoreBoard.textContent = evilComputerScore;
-                } else {
-                    result.textContent = 'Congratulations, You Win!';
-                    humanPlayerScore++;
-                    humanPlayerScoreBoard.textContent = humanPlayerScore;
-                    };  
-                }
-        else if (player == 'spock'){
-                if(computer == 'lizard'){
-                    result.textContent = 'Evil Computer Wins!';
-                    evilComputerScore++;
-                    evilComputerScoreBoard.textContent = evilComputerScore;
-                }else {
-                    result.textContent = 'Congratulations, You Win!';
-                    humanPlayerScore++;
-                    humanPlayerScoreBoard.textContent = humanPlayerScore;
-                    };
-                }
-        else if (player == 'scissors'){
-                    if(computer == 'spock'){
-                        result.textContent = 'Evil Computer Wins!';
-                        evilComputerScore++;
-                        evilComputerScoreBoard.textContent = evilComputerScore;
-                    }else {
-                        result.textContent = 'Congratulations, You Win!';
-                        humanPlayerScore++;
-                        humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };
-                    }
-        else if (player == 'lizard'){
-                    if(computer == 'scissors'){
-                        result.textContent = 'Evil Computer Wins!';
-                        evilComputerScore++;
-                        evilComputerScoreBoard.textContent = evilComputerScore;
-                    }else {
-                        result.textContent = 'Congratulations, You Win!';
-                        humanPlayerScore++;
-                        humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };
-                    }
-        else if (player == 'paper'){
-                    if(computer == 'lizard'){
-                        result.textContent = 'Evil Computer Wins!';
-                        evilComputerScore++;
-                        evilComputerScoreBoard.textContent = evilComputerScore;
-                    }else {
-                        result.textContent = 'Congratulations, You Win!';
-                        humanPlayerScore++;
-                        humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };
-                    }
-        else if (player == 'spock'){
-                    if(computer == 'paper'){
-                        result.textContent = 'Evil Computer Wins!';
-                        evilComputerScore++;
-                        evilComputerScoreBoard.textContent = evilComputerScore;
-                    }else {
-                        result.textContent = 'Congratulations, You Win!';
-                        humanPlayerScore++;
-                        humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };
-                    }
-        else if (player == 'rock'){
-                    if(computer == 'spock'){
-                        result.textContent = 'Evil Computer Wins!';
-                        evilComputerScore++;
-                        evilComputerScoreBoard.textContent = evilComputerScore;
-                    }else {
-                        result.textContent = 'Congratulations, You Win!';
-                        humanPlayerScore++;
-                        humanPlayerScoreBoard.textContent = humanPlayerScore;
-                        };  
-                    }          
-        }
+  // Apply shake animation to the resultDiv
+  resultDiv.classList.add("shake");
 
-        const gameOver = (playerOptions, movesLeft) => {
-            const chooseMove = document.querySelector('.move');
-            const result = document.querySelector('.result');
-            const reloadBtn = document.querySelector('.reload');
+  // Remove the shake class after the animation ends
+  setTimeout(() => {
+    resultDiv.classList.remove("shake");
+  }, 500);
+}
 
-            playerOptions.forEach(option => {
-                option.style.display = 'none';
-            });
+// Function to determine the winner based on the game rules
+function determineWinner(user, computer) {
+  if (user === computer) {
+    return "It's a tie!";
+  }
 
-            chooseMove.innerText = 'Game Over!';
-            movesLeft.style.display = 'none';
+  if (
+    (user === "rock" && (computer === "scissors" || computer === "lizard")) ||
+    (user === "paper" && (computer === "rock" || computer === "spock")) ||
+    (user === "scissors" && (computer === "paper" || computer === "lizard")) ||
+    (user === "lizard" && (computer === "paper" || computer === "spock")) ||
+    (user === "spock" && (computer === "rock" || computer === "scissors"))
+  ) {
+    return "You win!";
+  } else {
+    return "Computer wins!";
+  }
+}
 
-            if (humanPlayerScore > evilComputerScore){
-                result.style.fontSize = '2rem';
-                result.innerText = 'You Won This Round!';
-                result.style.color = '#006400';
-            }
-            else if (humanPlayerScore < evilComputerScore){
-                result.style.fontSize = '2rem';
-                result.innerText = 'You Lost This Round!';
-                result.style.color = '#006400';
-            }
-            else{
-                result.style.fontSize = '2rem';
-                result.innerText = 'Equally Matched!';
-                result.style.color = '#006400';
-            }
-            reloadBtn.innertext = 'Restart';
-            reloadBtn.style.display ='flex';
-            reloadBtn.addEventListener('click', () => {
-                window.location.reload();
-            });
-        };
-
-        beginFight();
-
-    };
-
-    startBattle();
-
+// Add click event listeners to the choice buttons
+const buttons = document.querySelectorAll(".choice");
+buttons.forEach(button => {
+  button.addEventListener("click", function() {
+    play(button.id);
+  });
+});
