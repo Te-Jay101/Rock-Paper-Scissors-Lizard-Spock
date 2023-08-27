@@ -15,7 +15,8 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
     - A link that take you to the rules page.
     - Clearly explains the rules of the game to the user.
 
-![TheRules](assets/images/)
+![rulestab](assets/images/rulestab.png)
+![TheRules](assets/images/rulespage.png)
 
 - __Heading__
 
@@ -23,14 +24,14 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
   - Positioned at the top of the page just below the rules tab, clearly positioned that contrasts witht he background.
   - The header clearly tells the user what the game is.
 
-![Heading](assets/images/) 
+![Heading](assets/images/heading.png) 
 
 - __Make a Choice__
 
   - The option boxs are clearly positioned for the user to make a choice in the game.
     - Interactive buttons that the player can select to play against the computer.
 
-![MakeaChoice](assets/images/)
+![MakeaChoice](assets/images/choices.png)
 
 - __The Winner__
 
@@ -38,7 +39,7 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
     - This bar is where the player has interactive buttons that can be chosen in order to play against the computer. The resulting option will lead to a display of who has won if anyone. 
     - Making a choice will present 2 pictures in browser that shows your choice vs the computers and declare a winner.
 
-![TheWinner](assets/images/) 
+![TheWinner](assets/images/winner.png) 
 
 
 
@@ -50,7 +51,7 @@ Rock-paper-scissors-lizard-Spock is a variant of Rock-paper-scissors that allows
 - I have run it through lighthouse and have determined that all colors and fonts are easy to read and accessible.
 
 
-![Lighthouse](assets/images/)
+![Lighthouse](assets/images/lighthouse.png)
 
 
 ### Validator Testing 
@@ -83,6 +84,7 @@ The live link for my site is as follows:
 ### Content 
 
 - Used geeksforgeeks.org to help with aspects of css.
+- Code Institutes project rock paper scissors.
 
 ### Media
 

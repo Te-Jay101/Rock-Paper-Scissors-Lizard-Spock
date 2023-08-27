@@ -21,9 +21,9 @@ function play(userChoice) {
   // Display the user's and computer's choices along with the result
   resultDiv.innerHTML = `
     <p>You chose ${userChoice}.</p>
-    <img src="images/${userChoice}.jpeg" alt="${userChoice}" />
+    <img src="assets/images/${userChoice}.jpeg" alt="${userChoice}" />
     <p>Computer chose ${compChoice}.</p>
-    <img src="images/${compChoice}.jpeg" alt="${compChoice}" />
+    <img src="assets/images/${compChoice}.jpeg" alt="${compChoice}" />
     <p>${result}</p>
   `;
 
